@@ -1,0 +1,377 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{779BB2E9-9A93-4C3C-9174-1A91C0149C12}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CisrBatch</RootNamespace>
+    <AssemblyName>CisrBatch</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>F8CAB4E67E0903AE25A48502DF80E73697042C27</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>CisrBatch_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json.Net35">
+      <HintPath>..\CISR\CISR\refDll\Newtonsoft.Json.Net35.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="lib\Controller\Model\Basic\BasicModel%40.cs" />
+    <Compile Include="lib\Controller\Model\Basic\BasicModel.cs" />
+    <Compile Include="lib\Controller\Model\Basic\CloudModel%40.cs" />
+    <Compile Include="lib\Controller\Model\Basic\CloudModel.cs" />
+    <Compile Include="lib\Controller\Model\Basic\Table\ActiveConnection%40.cs" />
+    <Compile Include="lib\Controller\Model\Basic\Table\ActiveConnection.cs" />
+    <Compile Include="lib\Controller\Model\Basic\Table\ApplicationHead%40.cs" />
+    <Compile Include="lib\Controller\Model\Basic\Table\ApplicationHead.cs" />
+    <Compile Include="lib\Controller\Model\Basic\Table\Appmenu%40.cs" />
+    <Compile Include="lib\Controller\Model\Basic\Table\Appmenu.cs" />
+    <Compile Include="lib\Controller\Model\Basic\Table\AppmenuApppageV%40.cs" />
+    <Compile Include="lib\Controller\Model\Basic\Table\AppmenuApppageV.cs" />
+    <Compile Include="lib\Controller\Model\Basic\Table\AppmenuProxyMap%40.cs" />
+    <Compile Include="lib\Controller\Model\Basic\Table\AppmenuProxyMap.cs" />
+    <Compile Include="lib\Controller\Model\Basic\Table\Apppage%40.cs" />
+    <Compile Include="lib\Controller\Model\Basic\Table\Apppage.cs" />
+    <Compile Include="lib\Controller\Model\Basic\Table\Attendant%40.cs" />
+    <Compile Include="lib\Controller\Model\Basic\Table\Attendant.cs" />
+    <Compile Include="lib\Controller\Model\Basic\Table\AttendantV%40.cs" />
+    <Compile Include="lib\Controller\Model\Basic\Table\AttendantV.cs" />
+    <Compile Include="lib\Controller\Model\Basic\Table\AuthorityMenuV%40.cs" />
+    <Compile Include="lib\Controller\Model\Basic\Table\AuthorityMenuV.cs" />
+    <Compile Include="lib\Controller\Model\Basic\Table\Company%40.cs" />
+    <Compile Include="lib\Controller\Model\Basic\Table\Company.cs" />
+    <Compile Include="lib\Controller\Model\Basic\Table\Department%40.cs" />
+    <Compile Include="lib\Controller\Model\Basic\Table\Department.cs" />
+    <Compile Include="lib\Controller\Model\Basic\Table\ErrorLog%40.cs" />
+    <Compile Include="lib\Controller\Model\Basic\Table\ErrorLog.cs" />
+    <Compile Include="lib\Controller\Model\Basic\Table\ErrorLogV%40.cs" />
+    <Compile Include="lib\Controller\Model\Basic\Table\ErrorLogV.cs" />
+    <Compile Include="lib\Controller\Model\Basic\Table\GroupAppmenu%40.cs" />
+    <Compile Include="lib\Controller\Model\Basic\Table\GroupAppmenu.cs" />
+    <Compile Include="lib\Controller\Model\Basic\Table\GroupAppmenuV%40.cs" />
+    <Compile Include="lib\Controller\Model\Basic\Table\GroupAppmenuV.cs" />
+    <Compile Include="lib\Controller\Model\Basic\Table\GroupAttendant%40.cs" />
+    <Compile Include="lib\Controller\Model\Basic\Table\GroupAttendant.cs" />
+    <Compile Include="lib\Controller\Model\Basic\Table\GroupAttendantV%40.cs" />
+    <Compile Include="lib\Controller\Model\Basic\Table\GroupAttendantV.cs" />
+    <Compile Include="lib\Controller\Model\Basic\Table\GroupHead%40.cs" />
+    <Compile Include="lib\Controller\Model\Basic\Table\GroupHead.cs" />
+    <Compile Include="lib\Controller\Model\Basic\Table\GroupHeadV%40.cs" />
+    <Compile Include="lib\Controller\Model\Basic\Table\GroupHeadV.cs" />
+    <Compile Include="lib\Controller\Model\Basic\Table\Proxy%40.cs" />
+    <Compile Include="lib\Controller\Model\Basic\Table\Proxy.cs" />
+    <Compile Include="lib\Controller\Model\Basic\Table\Record\ActiveConnection_Record.cs" />
+    <Compile Include="lib\Controller\Model\Basic\Table\Record\ApplicationHead_Record.cs" />
+    <Compile Include="lib\Controller\Model\Basic\Table\Record\AppmenuApppageV_Record.cs" />
+    <Compile Include="lib\Controller\Model\Basic\Table\Record\AppmenuProxyMap_Record.cs" />
+    <Compile Include="lib\Controller\Model\Basic\Table\Record\Appmenu_Record.cs" />
+    <Compile Include="lib\Controller\Model\Basic\Table\Record\Apppage_Record.cs" />
+    <Compile Include="lib\Controller\Model\Basic\Table\Record\AttendantV_Record.cs" />
+    <Compile Include="lib\Controller\Model\Basic\Table\Record\Attendant_Record.cs" />
+    <Compile Include="lib\Controller\Model\Basic\Table\Record\AuthorityMenuV_Record.cs" />
+    <Compile Include="lib\Controller\Model\Basic\Table\Record\Company_Record.cs" />
+    <Compile Include="lib\Controller\Model\Basic\Table\Record\Department_Record.cs" />
+    <Compile Include="lib\Controller\Model\Basic\Table\Record\ErrorLogV_Record.cs" />
+    <Compile Include="lib\Controller\Model\Basic\Table\Record\ErrorLog_Record.cs" />
+    <Compile Include="lib\Controller\Model\Basic\Table\Record\GroupAppmenuV_Record.cs" />
+    <Compile Include="lib\Controller\Model\Basic\Table\Record\GroupAppmenu_Record.cs" />
+    <Compile Include="lib\Controller\Model\Basic\Table\Record\GroupAttendantV_Record.cs" />
+    <Compile Include="lib\Controller\Model\Basic\Table\Record\GroupAttendant_Record.cs" />
+    <Compile Include="lib\Controller\Model\Basic\Table\Record\GroupHeadV_Record.cs" />
+    <Compile Include="lib\Controller\Model\Basic\Table\Record\GroupHead_Record.cs" />
+    <Compile Include="lib\Controller\Model\Basic\Table\Record\Proxy_Record.cs" />
+    <Compile Include="lib\Controller\Model\Basic\Table\Record\ScheduleTime_Record.cs" />
+    <Compile Include="lib\Controller\Model\Basic\Table\Record\Schedule_Record.cs" />
+    <Compile Include="lib\Controller\Model\Basic\Table\Record\SitemapV_Record.cs" />
+    <Compile Include="lib\Controller\Model\Basic\Table\Record\Sitemap_Record.cs" />
+    <Compile Include="lib\Controller\Model\Basic\Table\Record\Site_Record.cs" />
+    <Compile Include="lib\Controller\Model\Basic\Table\Record\VAppmenuProxyMap_Record.cs" />
+    <Compile Include="lib\Controller\Model\Basic\Table\Record\VAuthProxy_Record.cs" />
+    <Compile Include="lib\Controller\Model\Basic\Table\Record\VScheduleTime_Record.cs" />
+    <Compile Include="lib\Controller\Model\Basic\Table\Schedule%40.cs" />
+    <Compile Include="lib\Controller\Model\Basic\Table\Schedule.cs" />
+    <Compile Include="lib\Controller\Model\Basic\Table\ScheduleTime%40.cs" />
+    <Compile Include="lib\Controller\Model\Basic\Table\ScheduleTime.cs" />
+    <Compile Include="lib\Controller\Model\Basic\Table\Site%40.cs" />
+    <Compile Include="lib\Controller\Model\Basic\Table\Site.cs" />
+    <Compile Include="lib\Controller\Model\Basic\Table\Sitemap%40.cs" />
+    <Compile Include="lib\Controller\Model\Basic\Table\Sitemap.cs" />
+    <Compile Include="lib\Controller\Model\Basic\Table\SitemapV%40.cs" />
+    <Compile Include="lib\Controller\Model\Basic\Table\SitemapV.cs" />
+    <Compile Include="lib\Controller\Model\Basic\Table\VAppmenuProxyMap%40.cs" />
+    <Compile Include="lib\Controller\Model\Basic\Table\VAppmenuProxyMap.cs" />
+    <Compile Include="lib\Controller\Model\Basic\Table\VAuthProxy%40.cs" />
+    <Compile Include="lib\Controller\Model\Basic\Table\VAuthProxy.cs" />
+    <Compile Include="lib\Controller\Model\Basic\Table\VScheduleTime%40.cs" />
+    <Compile Include="lib\Controller\Model\Basic\Table\VScheduleTime.cs" />
+    <Compile Include="lib\Controller\Model\Cr\CrModel%40.cs" />
+    <Compile Include="lib\Controller\Model\Cr\CrModel.cs" />
+    <Compile Include="lib\Controller\Model\Cr\Table\BaseLine%40.cs" />
+    <Compile Include="lib\Controller\Model\Cr\Table\BaseLine.cs" />
+    <Compile Include="lib\Controller\Model\Cr\Table\Cal%40.cs" />
+    <Compile Include="lib\Controller\Model\Cr\Table\Cal.cs" />
+    <Compile Include="lib\Controller\Model\Cr\Table\ChartList%40.cs" />
+    <Compile Include="lib\Controller\Model\Cr\Table\ChartList.cs" />
+    <Compile Include="lib\Controller\Model\Cr\Table\Dwg%40.cs" />
+    <Compile Include="lib\Controller\Model\Cr\Table\Dwg.cs" />
+    <Compile Include="lib\Controller\Model\Cr\Table\Files%40.cs" />
+    <Compile Include="lib\Controller\Model\Cr\Table\Files.cs" />
+    <Compile Include="lib\Controller\Model\Cr\Table\FrameCategory%40.cs" />
+    <Compile Include="lib\Controller\Model\Cr\Table\FrameCategory.cs" />
+    <Compile Include="lib\Controller\Model\Cr\Table\FrameHead%40.cs" />
+    <Compile Include="lib\Controller\Model\Cr\Table\FrameHead.cs" />
+    <Compile Include="lib\Controller\Model\Cr\Table\FrameItem%40.cs" />
+    <Compile Include="lib\Controller\Model\Cr\Table\FrameItem.cs" />
+    <Compile Include="lib\Controller\Model\Cr\Table\KpiFormula%40.cs" />
+    <Compile Include="lib\Controller\Model\Cr\Table\KpiFormula.cs" />
+    <Compile Include="lib\Controller\Model\Cr\Table\KpiFormulaDetail%40.cs" />
+    <Compile Include="lib\Controller\Model\Cr\Table\KpiFormulaDetail.cs" />
+    <Compile Include="lib\Controller\Model\Cr\Table\KpiHead%40.cs" />
+    <Compile Include="lib\Controller\Model\Cr\Table\KpiHead.cs" />
+    <Compile Include="lib\Controller\Model\Cr\Table\KpiPackage%40.cs" />
+    <Compile Include="lib\Controller\Model\Cr\Table\KpiPackage.cs" />
+    <Compile Include="lib\Controller\Model\Cr\Table\KpiPackageExpend%40.cs" />
+    <Compile Include="lib\Controller\Model\Cr\Table\KpiPackageExpend.cs" />
+    <Compile Include="lib\Controller\Model\Cr\Table\KpiPackageItem%40.cs" />
+    <Compile Include="lib\Controller\Model\Cr\Table\KpiPackageItem.cs" />
+    <Compile Include="lib\Controller\Model\Cr\Table\ParameterHead%40.cs" />
+    <Compile Include="lib\Controller\Model\Cr\Table\ParameterHead.cs" />
+    <Compile Include="lib\Controller\Model\Cr\Table\ParameterItem%40.cs" />
+    <Compile Include="lib\Controller\Model\Cr\Table\ParameterItem.cs" />
+    <Compile Include="lib\Controller\Model\Cr\Table\ParameterItemOwner%40.cs" />
+    <Compile Include="lib\Controller\Model\Cr\Table\ParameterItemOwner.cs" />
+    <Compile Include="lib\Controller\Model\Cr\Table\ParameterMonth%40.cs" />
+    <Compile Include="lib\Controller\Model\Cr\Table\ParameterMonth.cs" />
+    <Compile Include="lib\Controller\Model\Cr\Table\ParameterOwner%40.cs" />
+    <Compile Include="lib\Controller\Model\Cr\Table\ParameterOwner.cs" />
+    <Compile Include="lib\Controller\Model\Cr\Table\Pwg%40.cs" />
+    <Compile Include="lib\Controller\Model\Cr\Table\Pwg.cs" />
+    <Compile Include="lib\Controller\Model\Cr\Table\RawData%40.cs" />
+    <Compile Include="lib\Controller\Model\Cr\Table\RawData.cs" />
+    <Compile Include="lib\Controller\Model\Cr\Table\RawHead%40.cs" />
+    <Compile Include="lib\Controller\Model\Cr\Table\RawHead.cs" />
+    <Compile Include="lib\Controller\Model\Cr\Table\RawHeadCategory%40.cs" />
+    <Compile Include="lib\Controller\Model\Cr\Table\RawHeadCategory.cs" />
+    <Compile Include="lib\Controller\Model\Cr\Table\RawHeadSpecRule%40.cs" />
+    <Compile Include="lib\Controller\Model\Cr\Table\RawHeadSpecRule.cs" />
+    <Compile Include="lib\Controller\Model\Cr\Table\RawProcessHead%40.cs" />
+    <Compile Include="lib\Controller\Model\Cr\Table\RawProcessHead.cs" />
+    <Compile Include="lib\Controller\Model\Cr\Table\RawProcessItem%40.cs" />
+    <Compile Include="lib\Controller\Model\Cr\Table\RawProcessItem.cs" />
+    <Compile Include="lib\Controller\Model\Cr\Table\Record\BaseLine_Record.cs" />
+    <Compile Include="lib\Controller\Model\Cr\Table\Record\Cal_Record.cs" />
+    <Compile Include="lib\Controller\Model\Cr\Table\Record\ChartList_Record.cs" />
+    <Compile Include="lib\Controller\Model\Cr\Table\Record\Dwg_Record.cs" />
+    <Compile Include="lib\Controller\Model\Cr\Table\Record\Files_Record.cs" />
+    <Compile Include="lib\Controller\Model\Cr\Table\Record\FrameCategory_Record.cs" />
+    <Compile Include="lib\Controller\Model\Cr\Table\Record\FrameHead_Record.cs" />
+    <Compile Include="lib\Controller\Model\Cr\Table\Record\FrameItem_Record.cs" />
+    <Compile Include="lib\Controller\Model\Cr\Table\Record\KpiFormulaDetail_Record.cs" />
+    <Compile Include="lib\Controller\Model\Cr\Table\Record\KpiFormula_Record.cs" />
+    <Compile Include="lib\Controller\Model\Cr\Table\Record\KpiHead_Record.cs" />
+    <Compile Include="lib\Controller\Model\Cr\Table\Record\KpiPackageExpend_Record.cs" />
+    <Compile Include="lib\Controller\Model\Cr\Table\Record\KpiPackageItem_Record.cs" />
+    <Compile Include="lib\Controller\Model\Cr\Table\Record\KpiPackage_Record.cs" />
+    <Compile Include="lib\Controller\Model\Cr\Table\Record\ParameterHead_Record.cs" />
+    <Compile Include="lib\Controller\Model\Cr\Table\Record\ParameterItemOwner_Record.cs" />
+    <Compile Include="lib\Controller\Model\Cr\Table\Record\ParameterItem_Record.cs" />
+    <Compile Include="lib\Controller\Model\Cr\Table\Record\ParameterMonth_Record.cs" />
+    <Compile Include="lib\Controller\Model\Cr\Table\Record\ParameterOwner_Record.cs" />
+    <Compile Include="lib\Controller\Model\Cr\Table\Record\Pwg_Record.cs" />
+    <Compile Include="lib\Controller\Model\Cr\Table\Record\RawData_Record.cs" />
+    <Compile Include="lib\Controller\Model\Cr\Table\Record\RawHeadCategory_Record.cs" />
+    <Compile Include="lib\Controller\Model\Cr\Table\Record\RawHeadSpecRule_Record.cs" />
+    <Compile Include="lib\Controller\Model\Cr\Table\Record\RawHead_Record.cs" />
+    <Compile Include="lib\Controller\Model\Cr\Table\Record\RawProcessHead_Record.cs" />
+    <Compile Include="lib\Controller\Model\Cr\Table\Record\RawProcessItem_Record.cs" />
+    <Compile Include="lib\Controller\Model\Cr\Table\Record\Region_Record.cs" />
+    <Compile Include="lib\Controller\Model\Cr\Table\Record\RoleKpi_Record.cs" />
+    <Compile Include="lib\Controller\Model\Cr\Table\Record\Time_Record.cs" />
+    <Compile Include="lib\Controller\Model\Cr\Table\Record\UnitCategory_Record.cs" />
+    <Compile Include="lib\Controller\Model\Cr\Table\Record\Unit_Record.cs" />
+    <Compile Include="lib\Controller\Model\Cr\Table\Record\UploadJobLog_Record.cs" />
+    <Compile Include="lib\Controller\Model\Cr\Table\Record\UploadJob_Record.cs" />
+    <Compile Include="lib\Controller\Model\Cr\Table\Record\VCal_Record.cs" />
+    <Compile Include="lib\Controller\Model\Cr\Table\Record\VDwg_Record.cs" />
+    <Compile Include="lib\Controller\Model\Cr\Table\Record\VFrameHead_Record.cs" />
+    <Compile Include="lib\Controller\Model\Cr\Table\Record\VFrameitem_Record.cs" />
+    <Compile Include="lib\Controller\Model\Cr\Table\Record\ViewHome_Record.cs" />
+    <Compile Include="lib\Controller\Model\Cr\Table\Record\VKpiExp_Record.cs" />
+    <Compile Include="lib\Controller\Model\Cr\Table\Record\VKpiItem_Record.cs" />
+    <Compile Include="lib\Controller\Model\Cr\Table\Record\VKpi_Record.cs" />
+    <Compile Include="lib\Controller\Model\Cr\Table\Record\VParameterQuery_Record.cs" />
+    <Compile Include="lib\Controller\Model\Cr\Table\Record\VPwg_Record.cs" />
+    <Compile Include="lib\Controller\Model\Cr\Table\Record\VRawHead_Record.cs" />
+    <Compile Include="lib\Controller\Model\Cr\Table\Record\VUnit_Record.cs" />
+    <Compile Include="lib\Controller\Model\Cr\Table\Record\VUploadJob_Record.cs" />
+    <Compile Include="lib\Controller\Model\Cr\Table\Region%40.cs" />
+    <Compile Include="lib\Controller\Model\Cr\Table\Region.cs" />
+    <Compile Include="lib\Controller\Model\Cr\Table\RoleKpi%40.cs" />
+    <Compile Include="lib\Controller\Model\Cr\Table\RoleKpi.cs" />
+    <Compile Include="lib\Controller\Model\Cr\Table\Time%40.cs" />
+    <Compile Include="lib\Controller\Model\Cr\Table\Time.cs" />
+    <Compile Include="lib\Controller\Model\Cr\Table\Unit%40.cs" />
+    <Compile Include="lib\Controller\Model\Cr\Table\Unit.cs" />
+    <Compile Include="lib\Controller\Model\Cr\Table\UnitCategory%40.cs" />
+    <Compile Include="lib\Controller\Model\Cr\Table\UnitCategory.cs" />
+    <Compile Include="lib\Controller\Model\Cr\Table\UploadJob%40.cs" />
+    <Compile Include="lib\Controller\Model\Cr\Table\UploadJob.cs" />
+    <Compile Include="lib\Controller\Model\Cr\Table\UploadJobLog%40.cs" />
+    <Compile Include="lib\Controller\Model\Cr\Table\UploadJobLog.cs" />
+    <Compile Include="lib\Controller\Model\Cr\Table\VCal%40.cs" />
+    <Compile Include="lib\Controller\Model\Cr\Table\VCal.cs" />
+    <Compile Include="lib\Controller\Model\Cr\Table\VDwg%40.cs" />
+    <Compile Include="lib\Controller\Model\Cr\Table\VDwg.cs" />
+    <Compile Include="lib\Controller\Model\Cr\Table\VFrameHead%40.cs" />
+    <Compile Include="lib\Controller\Model\Cr\Table\VFrameHead.cs" />
+    <Compile Include="lib\Controller\Model\Cr\Table\VFrameitem%40.cs" />
+    <Compile Include="lib\Controller\Model\Cr\Table\VFrameitem.cs" />
+    <Compile Include="lib\Controller\Model\Cr\Table\ViewHome%40.cs" />
+    <Compile Include="lib\Controller\Model\Cr\Table\ViewHome.cs" />
+    <Compile Include="lib\Controller\Model\Cr\Table\VKpi%40.cs" />
+    <Compile Include="lib\Controller\Model\Cr\Table\VKpi.cs" />
+    <Compile Include="lib\Controller\Model\Cr\Table\VKpiExp%40.cs" />
+    <Compile Include="lib\Controller\Model\Cr\Table\VKpiExp.cs" />
+    <Compile Include="lib\Controller\Model\Cr\Table\VKpiItem%40.cs" />
+    <Compile Include="lib\Controller\Model\Cr\Table\VKpiItem.cs" />
+    <Compile Include="lib\Controller\Model\Cr\Table\VParameterQuery%40.cs" />
+    <Compile Include="lib\Controller\Model\Cr\Table\VParameterQuery.cs" />
+    <Compile Include="lib\Controller\Model\Cr\Table\VPwg%40.cs" />
+    <Compile Include="lib\Controller\Model\Cr\Table\VPwg.cs" />
+    <Compile Include="lib\Controller\Model\Cr\Table\VRawHead%40.cs" />
+    <Compile Include="lib\Controller\Model\Cr\Table\VRawHead.cs" />
+    <Compile Include="lib\Controller\Model\Cr\Table\VUnit%40.cs" />
+    <Compile Include="lib\Controller\Model\Cr\Table\VUnit.cs" />
+    <Compile Include="lib\Controller\Model\Cr\Table\VUploadJob%40.cs" />
+    <Compile Include="lib\Controller\Model\Cr\Table\VUploadJob.cs" />
+    <Compile Include="lib\Direct\Direct.cs" />
+    <Compile Include="lib\Direct\DirectProxyGenerator.cs" />
+    <Compile Include="lib\Direct\ExtAction.cs" />
+    <Compile Include="lib\Direct\ExtRPC.cs" />
+    <Compile Include="lib\Direct\ExtUtil.cs" />
+    <Compile Include="lib\Direct\Helper.cs" />
+    <Compile Include="lib\Direct\IAction.cs" />
+    <Compile Include="lib\Direct\Request.cs" />
+    <Compile Include="lib\Direct\Response.cs" />
+    <Compile Include="lib\ExtensionMethods.cs" />
+    <Compile Include="lib\Parameter\Config\ParameterFileManager.cs" />
+    <Compile Include="lib\Parameter\Config\ParemterConfigInfo.cs" />
+    <Compile Include="lib\Parameter\Config\ParemterConfigInfoCollection.cs" />
+    <Compile Include="lib\Parameter\Config\ParemterConfigs.cs" />
+    <Compile Include="lib\StoreSession.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="CisrBatch_TemporaryKey.pfx" />
+    <None Include="Configs\Cloud.config" />
+    <None Include="Configs\DataBase.config" />
+    <None Include="Configs\DirectAuth.config" />
+    <None Include="Configs\Parameter.config" />
+    <None Include="Configs\SMTP.config" />
+    <None Include="Configs\UserInfo.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="lib\Util\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\IST3.5.2013\IST\IST.csproj">
+      <Project>{432fae84-a610-4369-8b98-09eb97c269ca}</Project>
+      <Name>IST</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\log4net-1.2.13\src\log4net.vs2010.csproj">
+      <Project>{181fe707-e161-4722-9f38-6aaab6faa106}</Project>
+      <Name>log4net.vs2010</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NCalc\Evaluant.Calculator\NCalc.csproj">
+      <Project>{5f014003-50d8-49e0-8afe-91d38dccc97c}</Project>
+      <Name>NCalc</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
