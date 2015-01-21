@@ -1,0 +1,5 @@
+D:\Project13\CISR\NCalc\Evaluant.Calculator\bin\Release\NCalc.dll
+D:\Project13\CISR\NCalc\Evaluant.Calculator\bin\Release\NCalc.pdb
+D:\Project13\CISR\NCalc\Evaluant.Calculator\bin\Release\Antlr3.Runtime.dll
+D:\Project13\CISR\NCalc\Evaluant.Calculator\obj\Release\NCalc.dll
+D:\Project13\CISR\NCalc\Evaluant.Calculator\obj\Release\NCalc.pdb

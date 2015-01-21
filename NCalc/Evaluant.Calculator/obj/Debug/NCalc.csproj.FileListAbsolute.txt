@@ -1,0 +1,11 @@
+D:\Project13\CISR\NCalc\Evaluant.Calculator\bin\Debug\NCalc.dll
+D:\Project13\CISR\NCalc\Evaluant.Calculator\bin\Debug\NCalc.pdb
+D:\Project13\CISR\NCalc\Evaluant.Calculator\bin\Debug\Antlr3.Runtime.dll
+D:\Project13\CISR\NCalc\Evaluant.Calculator\obj\Debug\NCalc.dll
+D:\Project13\CISR\NCalc\Evaluant.Calculator\obj\Debug\NCalc.pdb
+D:\Project13\CISR\NCalc\Evaluant.Calculator\obj\Debug\NCalc.csprojResolveAssemblyReference.cache
+D:\Project13\CiSR\trunk\NCalc\Evaluant.Calculator\bin\Debug\NCalc.dll
+D:\Project13\CiSR\trunk\NCalc\Evaluant.Calculator\bin\Debug\NCalc.pdb
+D:\Project13\CiSR\trunk\NCalc\Evaluant.Calculator\bin\Debug\Antlr3.Runtime.dll
+D:\Project13\CiSR\trunk\NCalc\Evaluant.Calculator\obj\Debug\NCalc.dll
+D:\Project13\CiSR\trunk\NCalc\Evaluant.Calculator\obj\Debug\NCalc.pdb
